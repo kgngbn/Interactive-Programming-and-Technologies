@@ -1,0 +1,442 @@
+#define buzzer 7
+
+int select;
+
+void setup() {
+  pinMode (buzzer, OUTPUT);
+    Serial.begin(9600);
+}
+
+//Music 1
+void Music1() {
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+tone(buzzer, 494); delay(100); noTone(buzzer); //NOTE_B4
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 587); delay(100); noTone(buzzer); //NOTE_D5
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 494); delay(100); noTone(buzzer); //NOTE_B4
+tone(buzzer, 440); delay(100); noTone(buzzer); //NOTE_A4
+tone(buzzer, 440); delay(100); noTone(buzzer); //NOTE_A4
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+tone(buzzer, 587); delay(100); noTone(buzzer); //NOTE_D5
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 494); delay(100); noTone(buzzer); //NOTE_B4
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 587); delay(100); noTone(buzzer); //NOTE_D5
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 440); delay(100); noTone(buzzer); //NOTE_A4
+tone(buzzer, 440); delay(100); noTone(buzzer); //NOTE_A4
+tone(buzzer, 440); delay(100); noTone(buzzer); //NOTE_A4
+tone(buzzer, 494); delay(100); noTone(buzzer); //NOTE_B4
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 587); delay(100); noTone(buzzer); //NOTE_D5
+tone(buzzer, 698); delay(100); noTone(buzzer); //NOTE_F5
+tone(buzzer, 880); delay(100); noTone(buzzer); //NOTE_A5
+tone(buzzer, 784); delay(100); noTone(buzzer); //NOTE_G5
+tone(buzzer, 698); delay(100); noTone(buzzer); //NOTE_F5
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+tone(buzzer, 587); delay(100); noTone(buzzer); //NOTE_D5
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 494); delay(100); noTone(buzzer); //NOTE_B4
+tone(buzzer, 494); delay(100); noTone(buzzer); //NOTE_B4
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 587); delay(100); noTone(buzzer); //NOTE_D5
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 440); delay(100); noTone(buzzer); //NOTE_A4
+tone(buzzer, 440); delay(100); noTone(buzzer); //NOTE_A4
+tone(buzzer, 0); delay(100); noTone(buzzer); //REST
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+tone(buzzer, 494); delay(100); noTone(buzzer); //NOTE_B4
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 587); delay(100); noTone(buzzer); //NOTE_D5
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 494); delay(100); noTone(buzzer); //NOTE_B4
+tone(buzzer, 440); delay(100); noTone(buzzer); //NOTE_A4
+tone(buzzer, 440); delay(100); noTone(buzzer); //NOTE_A4
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+tone(buzzer, 587); delay(100); noTone(buzzer); //NOTE_D5
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 494); delay(100); noTone(buzzer); //NOTE_B4
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 587); delay(100); noTone(buzzer); //NOTE_D5
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 440); delay(100); noTone(buzzer); //NOTE_A4
+tone(buzzer, 440); delay(100); noTone(buzzer); //NOTE_A4
+tone(buzzer, 440); delay(100); noTone(buzzer); //NOTE_A4
+tone(buzzer, 494); delay(100); noTone(buzzer); //NOTE_B4
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 587); delay(100); noTone(buzzer); //NOTE_D5
+tone(buzzer, 698); delay(100); noTone(buzzer); //NOTE_F5
+tone(buzzer, 880); delay(100); noTone(buzzer); //NOTE_A5
+tone(buzzer, 784); delay(100); noTone(buzzer); //NOTE_G5
+tone(buzzer, 698); delay(100); noTone(buzzer); //NOTE_F5
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+tone(buzzer, 587); delay(100); noTone(buzzer); //NOTE_D5
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 494); delay(100); noTone(buzzer); //NOTE_B4
+tone(buzzer, 494); delay(100); noTone(buzzer); //NOTE_B4
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 587); delay(100); noTone(buzzer); //NOTE_D5
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 440); delay(100); noTone(buzzer); //NOTE_A4
+tone(buzzer, 440); delay(100); noTone(buzzer); //NOTE_A4
+tone(buzzer, 0); delay(100); noTone(buzzer); //REST
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 587); delay(100); noTone(buzzer); //NOTE_D5
+tone(buzzer, 494); delay(100); noTone(buzzer); //NOTE_B4
+tone(buzzer, 494); delay(100); noTone(buzzer); //NOTE_B4
+tone(buzzer, 440); delay(100); noTone(buzzer); //NOTE_A4
+tone(buzzer, 415); delay(100); noTone(buzzer); //NOTE_GS4
+tone(buzzer, 494); delay(100); noTone(buzzer); //NOTE_B4
+tone(buzzer, 0); delay(100); noTone(buzzer); //REST
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 587); delay(100); noTone(buzzer); //NOTE_D5
+tone(buzzer, 494); delay(100); noTone(buzzer); //NOTE_B4
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+tone(buzzer, 880); delay(100); noTone(buzzer); //NOTE_A5
+tone(buzzer, 831); delay(100); noTone(buzzer); //NOTE_GS5
+}
+
+//Music2
+void Music2() {
+//1 
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+tone(buzzer, 0); delay(100); noTone(buzzer); //REST
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+tone(buzzer, 0); delay(100); noTone(buzzer); //REST
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_E5
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+//1
+tone(buzzer, 784); delay(100); noTone(buzzer); //NOTE_G5
+tone(buzzer, 0); delay(100); noTone(buzzer); //REST
+tone(buzzer, 392); delay(100); noTone(buzzer); //NOTE_G4
+tone(buzzer, 0); delay(100); noTone(buzzer); //REST
+//3
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 392); delay(100); noTone(buzzer); //NOTE_G4
+tone(buzzer, 0); delay(100); noTone(buzzer); //REST
+tone(buzzer, 330); delay(100); noTone(buzzer); //NOTE_E4
+//3
+tone(buzzer, 440); delay(100); noTone(buzzer); //NOTE_A4
+tone(buzzer, 494); delay(100); noTone(buzzer); //NOTE_B4
+tone(buzzer, 466); delay(100); noTone(buzzer); //NOTE_AS4
+tone(buzzer, 440); delay(100); noTone(buzzer); //NOTE_A4
+tone(buzzer, 392); delay(100); noTone(buzzer); //NOTE_G4
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+tone(buzzer, 784); delay(100); noTone(buzzer); //NOTE_G5
+tone(buzzer, 880); delay(100); noTone(buzzer); //NOTE_A5
+tone(buzzer, 698); delay(100); noTone(buzzer); //NOTE_F5
+tone(buzzer, 784); delay(100); noTone(buzzer); //NOTE_G5
+tone(buzzer, 0); delay(100); noTone(buzzer); //REST
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 587); delay(100); noTone(buzzer); //NOTE_D5
+tone(buzzer, 494); delay(100); noTone(buzzer); //NOTE_B4
+//3
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 392); delay(100); noTone(buzzer); //NOTE_G4
+tone(buzzer, 0); delay(100); noTone(buzzer); //REST
+tone(buzzer, 330); delay(100); noTone(buzzer); //NOTE_E4
+//3
+tone(buzzer, 440); delay(100); noTone(buzzer); //NOTE_A4
+tone(buzzer, 494); delay(100); noTone(buzzer); //NOTE_B4
+tone(buzzer, 466); delay(100); noTone(buzzer); //NOTE_AS4
+tone(buzzer, 440); delay(100); noTone(buzzer); //NOTE_A4
+tone(buzzer, 392); delay(100); noTone(buzzer); //NOTE_G4
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+tone(buzzer, 784); delay(100); noTone(buzzer); //NOTE_G5
+tone(buzzer, 880); delay(100); noTone(buzzer); //NOTE_A5
+tone(buzzer, 698); delay(100); noTone(buzzer); //NOTE_F5
+tone(buzzer, 784); delay(100); noTone(buzzer); //NOTE_G5
+tone(buzzer, 0); delay(100); noTone(buzzer); //REST
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 587); delay(100); noTone(buzzer); //NOTE_D5
+tone(buzzer, 494); delay(100); noTone(buzzer); //NOTE_B4
+//7
+tone(buzzer, 0); delay(100); noTone(buzzer); //REST
+tone(buzzer, 784); delay(100); noTone(buzzer); //NOTE_G5
+tone(buzzer, 740); delay(100); noTone(buzzer); //NOTE_FS5
+tone(buzzer, 698); delay(100); noTone(buzzer); //NOTE_F5
+tone(buzzer, 622); delay(100); noTone(buzzer); //NOTE_DS5
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+//7
+tone(buzzer, 0); delay(100); noTone(buzzer); //REST
+tone(buzzer, 415); delay(100); noTone(buzzer); //NOTE_GS4
+tone(buzzer, 440); delay(100); noTone(buzzer); //NOTE_A4
+tone(buzzer, 262); delay(100); noTone(buzzer); //NOTE_C4
+tone(buzzer, 0); delay(100); noTone(buzzer); //REST
+tone(buzzer, 440); delay(100); noTone(buzzer); //NOTE_A4
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 587); delay(100); noTone(buzzer); //NOTE_D5
+tone(buzzer, 0); delay(100); noTone(buzzer); //REST
+tone(buzzer, 622); delay(100); noTone(buzzer); //NOTE_DS5
+tone(buzzer, 0); delay(100); noTone(buzzer); //REST
+tone(buzzer, 587); delay(100); noTone(buzzer); //NOTE_D5
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 0); delay(100); noTone(buzzer); //REST
+//7
+tone(buzzer, 0); delay(100); noTone(buzzer); //REST
+tone(buzzer, 784); delay(100); noTone(buzzer); //NOTE_G5
+tone(buzzer, 740); delay(100); noTone(buzzer); //NOTE_FS5
+tone(buzzer, 698); delay(100); noTone(buzzer); //NOTE_F5
+tone(buzzer, 622); delay(100); noTone(buzzer); //NOTE_DS5
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+//7
+tone(buzzer, 0); delay(100); noTone(buzzer); //REST
+tone(buzzer, 415); delay(100); noTone(buzzer); //NOTE_GS4
+tone(buzzer, 440); delay(100); noTone(buzzer); //NOTE_A4
+tone(buzzer, 262); delay(100); noTone(buzzer); //NOTE_C4
+tone(buzzer, 0); delay(100); noTone(buzzer); //REST
+tone(buzzer, 440); delay(100); noTone(buzzer); //NOTE_A4
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 587); delay(100); noTone(buzzer); //NOTE_D5
+tone(buzzer, 0); delay(100); noTone(buzzer); //REST
+tone(buzzer, 622); delay(100); noTone(buzzer); //NOTE_DS5
+tone(buzzer, 0); delay(100); noTone(buzzer); //REST
+tone(buzzer, 587); delay(100); noTone(buzzer); //NOTE_D5
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 0); delay(100); noTone(buzzer); //REST
+//11
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 0); delay(100); noTone(buzzer); //REST
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 587); delay(100); noTone(buzzer); //NOTE_D5
+//11
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 440); delay(100); noTone(buzzer); //NOTE_A4
+tone(buzzer, 392); delay(100); noTone(buzzer); //NOTE_G4
+//13
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 0); delay(100); noTone(buzzer); //REST
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 587); delay(100); noTone(buzzer); //NOTE_D5
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+//13
+tone(buzzer, 0); delay(100); noTone(buzzer); //REST
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 0); delay(100); noTone(buzzer); //REST
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 587); delay(100); noTone(buzzer); //NOTE_D5
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 440); delay(100); noTone(buzzer); //NOTE_A4
+tone(buzzer, 392); delay(100); noTone(buzzer); //NOTE_G4
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+tone(buzzer, 0); delay(100); noTone(buzzer); //REST
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+tone(buzzer, 0); delay(100); noTone(buzzer); //REST
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+tone(buzzer, 784); delay(100); noTone(buzzer); //NOTE_G5
+tone(buzzer, 0); delay(100); noTone(buzzer); //REST
+tone(buzzer, 392); delay(100); noTone(buzzer); //NOTE_G4
+tone(buzzer, 0); delay(100); noTone(buzzer); //REST
+//19
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 392); delay(100); noTone(buzzer); //NOTE_G4
+tone(buzzer, 0); delay(100); noTone(buzzer); //REST
+tone(buzzer, 330); delay(100); noTone(buzzer); //NOTE_E4
+//19
+tone(buzzer, 0); delay(100); noTone(buzzer); //REST
+}
+
+//Music 3
+void Music3() {
+  //1
+tone(buzzer, 494); delay(100); noTone(buzzer); //NOTE_B4
+tone(buzzer, 988); delay(100); noTone(buzzer); //NOTE_B5
+tone(buzzer, 740); delay(100); noTone(buzzer); //NOTE_FS5
+tone(buzzer, 622); delay(100); noTone(buzzer); //NOTE_DS5
+//1
+tone(buzzer, 988); delay(100); noTone(buzzer); //NOTE_B5
+tone(buzzer, 740); delay(100); noTone(buzzer); //NOTE_FS5
+tone(buzzer, 622); delay(100); noTone(buzzer); //NOTE_DS5
+tone(buzzer, 523); delay(100); noTone(buzzer); //NOTE_C5
+tone(buzzer, 1047); delay(100); noTone(buzzer); //NOTE_C6
+tone(buzzer, 1568); delay(100); noTone(buzzer); //NOTE_G6
+tone(buzzer, 1319); delay(100); noTone(buzzer); //NOTE_E6
+tone(buzzer, 1047); delay(100); noTone(buzzer); //NOTE_C6
+tone(buzzer, 1568); delay(100); noTone(buzzer); //NOTE_G6
+tone(buzzer, 1319); delay(100); noTone(buzzer); //NOTE_E6
+//2
+tone(buzzer, 494); delay(100); noTone(buzzer); //NOTE_B4
+tone(buzzer, 988); delay(100); noTone(buzzer); //NOTE_B5
+tone(buzzer, 740); delay(100); noTone(buzzer); //NOTE_FS5
+tone(buzzer, 622); delay(100); noTone(buzzer); //NOTE_DS5
+tone(buzzer, 988); delay(100); noTone(buzzer); //NOTE_B5
+//2
+tone(buzzer, 740); delay(100); noTone(buzzer); //NOTE_FS5
+tone(buzzer, 622); delay(100); noTone(buzzer); //NOTE_DS5
+tone(buzzer, 622); delay(100); noTone(buzzer); //NOTE_DS5
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+tone(buzzer, 698); delay(100); noTone(buzzer); //NOTE_F5
+tone(buzzer, 698); delay(100); noTone(buzzer); //NOTE_F5
+tone(buzzer, 740); delay(100); noTone(buzzer); //NOTE_FS5
+tone(buzzer, 622); delay(100); noTone(buzzer); //NOTE_DS5
+tone(buzzer, 622); delay(100); noTone(buzzer); //NOTE_DS5
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+tone(buzzer, 698); delay(100); noTone(buzzer); //NOTE_F5
+tone(buzzer, 698); delay(100); noTone(buzzer); //NOTE_F5
+tone(buzzer, 740); delay(100); noTone(buzzer); //NOTE_FS5
+tone(buzzer, 784); delay(100); noTone(buzzer); //NOTE_G5
+tone(buzzer, 784); delay(100); noTone(buzzer); //NOTE_G5
+tone(buzzer, 831); delay(100); noTone(buzzer); //NOTE_GS5
+tone(buzzer, 880); delay(100); noTone(buzzer); //NOTE_A5
+tone(buzzer, 988); delay(100); noTone(buzzer); //NOTE_B5
+}
+
+//Music 4
+void Music4() {
+  tone(buzzer, 587); delay(100); noTone(buzzer); //NOTE_D5
+tone(buzzer, 880); delay(100); noTone(buzzer); //NOTE_A5
+tone(buzzer, 740); delay(100); noTone(buzzer); //NOTE_FS5
+tone(buzzer, 587); delay(100); noTone(buzzer); //NOTE_D5
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+tone(buzzer, 740); delay(100); noTone(buzzer); //NOTE_FS5
+tone(buzzer, 784); delay(100); noTone(buzzer); //NOTE_G5
+tone(buzzer, 740); delay(100); noTone(buzzer); //NOTE_FS5
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+tone(buzzer, 740); delay(100); noTone(buzzer); //NOTE_FS5
+tone(buzzer, 587); delay(100); noTone(buzzer); //NOTE_D5
+tone(buzzer, 587); delay(100); noTone(buzzer); //NOTE_D5
+tone(buzzer, 880); delay(100); noTone(buzzer); //NOTE_A5
+tone(buzzer, 740); delay(100); noTone(buzzer); //NOTE_FS5
+tone(buzzer, 587); delay(100); noTone(buzzer); //NOTE_D5
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+tone(buzzer, 740); delay(100); noTone(buzzer); //NOTE_FS5
+tone(buzzer, 784); delay(100); noTone(buzzer); //NOTE_G5
+tone(buzzer, 740); delay(100); noTone(buzzer); //NOTE_FS5
+tone(buzzer, 587); delay(100); noTone(buzzer); //NOTE_D5
+tone(buzzer, 880); delay(100); noTone(buzzer); //NOTE_A5
+tone(buzzer, 740); delay(100); noTone(buzzer); //NOTE_FS5
+tone(buzzer, 587); delay(100); noTone(buzzer); //NOTE_D5
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+tone(buzzer, 740); delay(100); noTone(buzzer); //NOTE_FS5
+tone(buzzer, 784); delay(100); noTone(buzzer); //NOTE_G5
+tone(buzzer, 740); delay(100); noTone(buzzer); //NOTE_FS5
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+tone(buzzer, 740); delay(100); noTone(buzzer); //NOTE_FS5
+tone(buzzer, 587); delay(100); noTone(buzzer); //NOTE_D5
+tone(buzzer, 587); delay(100); noTone(buzzer); //NOTE_D5
+tone(buzzer, 880); delay(100); noTone(buzzer); //NOTE_A5
+tone(buzzer, 740); delay(100); noTone(buzzer); //NOTE_FS5
+tone(buzzer, 587); delay(100); noTone(buzzer); //NOTE_D5
+tone(buzzer, 659); delay(100); noTone(buzzer); //NOTE_E5
+tone(buzzer, 740); delay(100); noTone(buzzer); //NOTE_FS5
+tone(buzzer, 784); delay(100); noTone(buzzer); //NOTE_G5
+tone(buzzer, 740); delay(100); noTone(buzzer); //NOTE_FS5
+}
+
+//Music 5
+void Music5() {
+  tone(buzzer, 0); delay(100); noTone(buzzer); //REST
+tone(buzzer, 0); delay(100); noTone(buzzer); //REST
+tone(buzzer, 262); delay(100); noTone(buzzer); //NOTE_C4
+tone(buzzer, 330); delay(100); noTone(buzzer); //NOTE_E4
+tone(buzzer, 292); delay(100); noTone(buzzer); //NOTE_G4
+tone(buzzer, 330); delay(100); noTone(buzzer); //NOTE_E4
+tone(buzzer, 262); delay(100); noTone(buzzer); //NOTE_C4
+tone(buzzer, 330); delay(100); noTone(buzzer); //NOTE_E4
+tone(buzzer, 292); delay(100); noTone(buzzer); //NOTE_G4
+tone(buzzer, 330); delay(100); noTone(buzzer); //NOTE_E4
+tone(buzzer, 220); delay(100); noTone(buzzer); //NOTE_A3
+tone(buzzer, 262); delay(100); noTone(buzzer); //NOTE_C4
+tone(buzzer, 330); delay(100); noTone(buzzer); //NOTE_E4
+tone(buzzer, 262); delay(100); noTone(buzzer); //NOTE_C4
+tone(buzzer, 220); delay(100); noTone(buzzer); //NOTE_A3
+tone(buzzer, 262); delay(100); noTone(buzzer); //NOTE_C4
+tone(buzzer, 330); delay(100); noTone(buzzer); //NOTE_E4
+tone(buzzer, 262); delay(100); noTone(buzzer); //NOTE_C4
+tone(buzzer, 196); delay(100); noTone(buzzer); //NOTE_G3
+tone(buzzer, 247); delay(100); noTone(buzzer); //NOTE_B3
+tone(buzzer, 294); delay(100); noTone(buzzer); //NOTE_D4
+tone(buzzer, 247); delay(100); noTone(buzzer); //NOTE_B3
+tone(buzzer, 196); delay(100); noTone(buzzer); //NOTE_G3
+tone(buzzer, 247); delay(100); noTone(buzzer); //NOTE_B3
+tone(buzzer, 294); delay(100); noTone(buzzer); //NOTE_D4
+tone(buzzer, 247); delay(100); noTone(buzzer); //NOTE_B3
+tone(buzzer, 196); delay(100); noTone(buzzer); //NOTE_G3
+tone(buzzer, 196); delay(100); noTone(buzzer); //NOTE_G3
+tone(buzzer, 196); delay(100); noTone(buzzer); //NOTE_G3
+tone(buzzer, 196); delay(100); noTone(buzzer); //NOTE_G3
+tone(buzzer, 196); delay(100); noTone(buzzer); //NOTE_G3
+tone(buzzer, 196); delay(100); noTone(buzzer); //NOTE_G3
+tone(buzzer, 196); delay(100); noTone(buzzer); //NOTE_G3
+tone(buzzer, 196); delay(100); noTone(buzzer); //NOTE_G3
+tone(buzzer, 196); delay(100); noTone(buzzer); //NOTE_G3
+tone(buzzer, 262); delay(100); noTone(buzzer); //NOTE_C4
+tone(buzzer, 330); delay(100); noTone(buzzer); //NOTE_E4
+tone(buzzer, 292); delay(100); noTone(buzzer); //NOTE_G4
+tone(buzzer, 330); delay(100); noTone(buzzer); //NOTE_E4
+tone(buzzer, 262); delay(100); noTone(buzzer); //NOTE_C4
+tone(buzzer, 330); delay(100); noTone(buzzer); //NOTE_E4
+tone(buzzer, 292); delay(100); noTone(buzzer); //NOTE_G4
+tone(buzzer, 330); delay(100); noTone(buzzer); //NOTE_E4
+tone(buzzer, 220); delay(100); noTone(buzzer); //NOTE_A3
+tone(buzzer, 262); delay(100); noTone(buzzer); //NOTE_C4
+tone(buzzer, 330); delay(100); noTone(buzzer); //NOTE_E4
+tone(buzzer, 262); delay(100); noTone(buzzer); //NOTE_C4
+tone(buzzer, 220); delay(100); noTone(buzzer); //NOTE_A3
+tone(buzzer, 262); delay(100); noTone(buzzer); //NOTE_C4
+tone(buzzer, 330); delay(100); noTone(buzzer); //NOTE_E4
+tone(buzzer, 262); delay(100); noTone(buzzer); //NOTE_C4
+tone(buzzer, 196); delay(100); noTone(buzzer); //NOTE_G3
+tone(buzzer, 247); delay(100); noTone(buzzer); //NOTE_B3
+tone(buzzer, 294); delay(100); noTone(buzzer); //NOTE_D4
+tone(buzzer, 247); delay(100); noTone(buzzer); //NOTE_B3
+tone(buzzer, 196); delay(100); noTone(buzzer); //NOTE_G3
+tone(buzzer, 247); delay(100); noTone(buzzer); //NOTE_B3
+tone(buzzer, 294); delay(100); noTone(buzzer); //NOTE_D4
+tone(buzzer, 247); delay(100); noTone(buzzer); //NOTE_B3
+tone(buzzer, 196); delay(100); noTone(buzzer); //NOTE_G3
+}
+
+void loop()
+{
+  Serial.print("SELECT MUSIC\n");
+  Serial.print("Please enter 1(Tetris), 2(MarioBros), 3(Pacman), 4(JigglyPuff), or 5(KeyboardCat).\n");
+  while (Serial.available() == 0)
+  {
+  }
+  select = Serial.parseInt();
+  switch (select) {
+  case 1:
+      Music1();
+    break;
+  case 2:
+    Music2();
+    break;
+  case 3:
+    Music3();
+    break;
+  case 4:
+    Music4();
+    break;
+  case 5:
+    Music5();
+    break;
+  }
+  }
